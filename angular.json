@@ -27,7 +27,7 @@
                 "output": "assets"
               },
                {
-                "glob": "**/*",
+                "glob": "_redirects",
                 "input": "src",
                 "output": "/"
               }
@@ -87,13 +87,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public",
-                "output": "assets"
-              },
-               {
-                "glob": "**/*",
-                "input": "src",
-                "output": "/"
+                "input": "public"
+
               }
             ],
             "styles": [
