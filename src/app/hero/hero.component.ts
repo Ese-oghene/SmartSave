@@ -14,17 +14,17 @@ export class HeroComponent implements OnInit, OnDestroy {
     {
       title: 'Save Smart, Live Better',
       description: 'Automated savings to help you reach your financial goals effortlessly.',
-      image: '../images/think.png'
+      image: 'assets/images/think.png'
     },
     {
        title: 'Plan for the Future',
       description: 'SmartSave helps you budget and grow wealth consistently.',
-      image: '../images/What.png'
+      image: 'assets/images/What.png'
     },
     {
        title: 'Secure & Transparent',
       description: 'Your savings are protected with bank-level security and transparency.',
-      image: '../images/How.png'
+      image: 'assets/images/How.png'
     }
   ];
 
