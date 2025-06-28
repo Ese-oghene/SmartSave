@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: tailwind-project
+    env: node
+    repo: https://github.com/Ese-oghene/SmartSave
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s dist/smart-save
+    buildFilter:
+      paths:
+        - src/**
+        - angular.json
+        - package.json
+    autoDeploy: true
+    pullRequestPreviewsEnabled: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
