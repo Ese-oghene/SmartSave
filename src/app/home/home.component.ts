@@ -5,12 +5,14 @@ import { HeroComponent } from "../hero/hero.component";
 import { AboutComponent } from "../about/about.component";
 import { FeaturesComponent } from "../features/features.component";
 import { TestimonialsComponent } from "../testimonials/testimonials.component";
+import { HowItWorksComponent } from '../how-it-works/how-it-works.component';
+import { PlansComponent } from '../plans/plans.component';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, HeroComponent, AboutComponent, FeaturesComponent, TestimonialsComponent],
+  imports: [CommonModule, HeaderComponent, HeroComponent, AboutComponent, FeaturesComponent, TestimonialsComponent,HowItWorksComponent,PlansComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
