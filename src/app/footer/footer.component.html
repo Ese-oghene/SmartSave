@@ -1,0 +1,45 @@
+<footer class="bg-gray-900 text-gray-200 py-10">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- About Links -->
+    <div>
+      <h4 class="font-bold mb-4 text-white">SmartSave</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        <li><a href="#" class="hover:text-blue-400">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="font-bold mb-4 text-white">Follow Us</h4>
+      <div class="flex gap-4 text-gray-300">
+        <a href="#"><svg class="w-6 h-6 hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 5.924a8.189 8.189 0 0 1-2.357.646A4.107 4.107 0 0 0 21.636 4a8.224 8.224 0 0 1-2.605.996A4.1 4.1 0 0 0 11.075 8.03a11.653 11.653 0 0 1-8.457-4.29 4.1 4.1 0 0 0 1.27 5.48 4.07 4.07 0 0 1-1.857-.513v.05a4.104 4.104 0 0 0 3.292 4.02 4.093 4.093 0 0 1-1.852.07 4.103 4.103 0 0 0 3.832 2.85A8.233 8.233 0 0 1 2 18.407a11.616 11.616 0 0 0 6.29 1.844c7.547 0 11.675-6.155 11.675-11.48 0-.175-.004-.35-.012-.524A8.18 8.18 0 0 0 24 4.557a8.258 8.258 0 0 1-2.37.65z"/></svg></a>
+        <a href="#"><svg class="w-6 h-6 hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.974.974 1.256 2.24 1.318 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.344 2.633-1.318 3.608-.975.974-2.241 1.256-3.608 1.318-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.344-3.608-1.318-.974-.975-1.256-2.241-1.318-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.344-2.633 1.318-3.608.975-.974 2.241-1.256 3.608-1.318C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.18 0-3.562.012-4.818.07-1.055.05-1.63.223-2.008.37a3.707 3.707 0 0 0-1.37.903 3.707 3.707 0 0 0-.902 1.37c-.148.378-.32.953-.37 2.008-.059 1.256-.07 1.638-.07 4.818s.012 3.562.07 4.818c.05 1.055.222 1.63.37 2.008a3.707 3.707 0 0 0 .903 1.37 3.707 3.707 0 0 0 1.37.902c.378.148.953.32 2.008.37 1.256.059 1.638.07 4.818.07s3.562-.012 4.818-.07c1.055-.05 1.63-.222 2.008-.37a3.707 3.707 0 0 0 1.37-.903 3.707 3.707 0 0 0 .902-1.37c.148-.378.32-.953.37-2.008.059-1.256.07-1.638.07-4.818s-.012-3.562-.07-4.818c-.05-1.055-.222-1.63-.37-2.008a3.707 3.707 0 0 0-.903-1.37 3.707 3.707 0 0 0-1.37-.902c-.378-.148-.953-.32-2.008-.37-1.256-.059-1.638-.07-4.818-.07zm0 3.838a5.162 5.162 0 1 1 0 10.324 5.162 5.162 0 0 1 0-10.324zm0 1.838a3.324 3.324 0 1 0 0 6.648 3.324 3.324 0 0 0 0-6.648zm6.406-.152a1.206 1.206 0 1 1-2.412 0 1.206 1.206 0 0 1 2.412 0z"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="md:col-span-2">
+      <h4 class="font-bold mb-4 text-white">Subscribe to our newsletter</h4>
+      <form (ngSubmit)="subscribe()" class="flex flex-col sm:flex-row gap-4">
+        <input
+          [(ngModel)]="email"
+          name="email"
+          type="email"
+          placeholder="Your email address"
+          class="px-4 py-2 rounded-md text-gray-800 w-full"
+        />
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-white font-semibold">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="text-center text-sm text-gray-500 mt-8">
+  &copy; {{ currentYear }} SmartSave. All rights reserved.
+</div>
+</footer>
+

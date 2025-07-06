@@ -7,12 +7,15 @@ import { FeaturesComponent } from "../features/features.component";
 import { TestimonialsComponent } from "../testimonials/testimonials.component";
 import { HowItWorksComponent } from '../how-it-works/how-it-works.component';
 import { PlansComponent } from '../plans/plans.component';
+import { FaqComponent } from '../faq/faq.component';
+import { FooterComponent } from '../footer/footer.component';
+import { PartnersComponent } from '../partners/partners.component';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, HeroComponent, AboutComponent, FeaturesComponent, TestimonialsComponent,HowItWorksComponent,PlansComponent],
+  imports: [CommonModule, HeaderComponent, HeroComponent, AboutComponent, FeaturesComponent, TestimonialsComponent,HowItWorksComponent,PlansComponent, FaqComponent, PartnersComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
